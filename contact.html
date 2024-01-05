@@ -1,0 +1,159 @@
+<ht>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Poiret+One&family=Sniglet&family=Tangerine&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <div id="title">
+        <div>
+            <a href="https://santhosh-sivakumar.github.io/Portfolio-builder/index.html" id="links"><span class="material-symbols-outlined" id="Home-icon">home</span>Home</a>
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>
+            <a href="https://santhosh-sivakumar.github.io/Portfolio-builder/about.html" id="links"><span class="material-symbols-outlined" id="Home-icon">contacts_product</span>  About</a>
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>
+            <a href="https://santhosh-sivakumar.github.io/Portfolio-builder/projects.html" id="links"><span class="material-symbols-outlined" id="Home-icon">description</span> Project</a>
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>
+            <a href="https://santhosh-sivakumar.github.io/Portfolio-builder/Achievements.html" id="links"><span class="material-symbols-outlined" id="Home-icon">trophy</span> Achievements</a>
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div style="background-color: #777; padding: 8px; border-radius: 10px;">
+            <a href="https://santhosh-sivakumar.github.io/Portfolio-builder/contact.html" id="links"><span class="material-symbols-outlined" id="Home-icon">phone_in_talk</span><c style= "font-size: x-large;"> Contact</c></a>
+        </div>
+    </div>
+
+    <body>
+        <br><br><br><br>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                width: 100%;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            button {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+
+        <script>
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+
+                if (name == "" || email == "" || message == "") {
+                    alert("Please fill in all fields");
+                    return false;
+                }
+
+                // Additional validation logic for email format, etc.
+
+                // If all validations pass, you can submit the form or perform further actions.
+                // You can use AJAX to send the form data to a server or handle it accordingly.
+                // Example: document.getElementById("contactForm").submit();
+                alert("Form submitted successfully!");
+            }
+        </script>
+    </body>
+    </html>
+<style>
+    #content{
+        font-family: "sniglet";
+        font-weight: bold;
+        font-size: larger;
+        
+        background-color: #00000040;
+        padding: 20px;
+        border: 0px;
+        border-radius: 10px;
+    }
+
+    #home-icon{
+        background-image: linear-gradient(to bottom right, yellow, red, blue);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    #links{
+        text-decoration: none;
+        color: black;
+    }
+
+    #title{
+        text-align: right;
+        font-family: "poiret one";
+        font-weight: bold;
+
+        display: flex;
+        background-color: #00000040;
+        padding: 10px;
+        
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    
+    body{
+        background-image: linear-gradient(to top left, #777, #999, #bbb, #ddd, #fff);
+    }
+</style>
